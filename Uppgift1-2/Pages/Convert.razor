@@ -1,0 +1,47 @@
+@page "/Convert"
+
+<PageTitle>Konvertering</PageTitle>
+
+<h2>Konvertering</h2>
+
+<h3>Konvertera meter till fot (feet)</h3>
+<div class="converterInput">
+    <label>Ange antal meter: </label>
+    <br />
+    <input type="number" @bind="Meters" />
+    <br />
+    <button @onclick="ConvertMetersToFeet">Konvertera</button>
+</div>
+<p>Resultat: @FeetResult fot</p>
+
+<h3>Konvertera km/h till miles/h</h3>
+<div class="converterInput">
+    <label>Ange hastighet i km/h: </label>
+    <br />
+    <input type="number" @bind="Kmh" />
+    <br />
+    <button @onclick="ConvertKmhToMph">Konvertera</button>
+</div>
+<p>Resultat: @MphResult m/h</p>
+
+@code {
+    private double Meters { get; set; }
+    private double Kmh { get; set; }
+    private string FeetResult { get; set; } = "0";
+    private string MphResult { get; set; } = "0";
+
+    private void ConvertMetersToFeet()
+    {
+        // Convert to feet. 1 meter = 3.28084 feet
+        double feet = Meters * 3.28084; 
+        // Round to 1 decimal, convert to string.
+        FeetResult = Math.Round(feet, 1).ToString();
+    }
+
+    private void ConvertKmhToMph()
+    {
+        // Convert to miles. 1 km/h = 0.62137
+        double mph = Kmh * 0.62137;
+        MphResult = Math.Round(mph, 0).ToString();
+    }
+}

@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D34B9A-39F4-4EA3-85A0-A551F6B0CCFC}|Uppgift1-1\\Uppgift1-1.csproj|c:\\users\\erik\\source\\repos\\uppgift1-1\\uppgift1-1\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3D34B9A-39F4-4EA3-85A0-A551F6B0CCFC}|Uppgift1-1\\Uppgift1-1.csproj|solutionrelative:uppgift1-1\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D34B9A-39F4-4EA3-85A0-A551F6B0CCFC}|Uppgift1-1\\Uppgift1-1.csproj|c:\\users\\erik\\source\\repos\\uppgift1-1\\uppgift1-1\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A3D34B9A-39F4-4EA3-85A0-A551F6B0CCFC}|Uppgift1-1\\Uppgift1-1.csproj|solutionrelative:uppgift1-1\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D34B9A-39F4-4EA3-85A0-A551F6B0CCFC}|Uppgift1-1\\Uppgift1-1.csproj|c:\\users\\erik\\source\\repos\\uppgift1-1\\uppgift1-1\\wwwroot\\js\\function.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A3D34B9A-39F4-4EA3-85A0-A551F6B0CCFC}|Uppgift1-1\\Uppgift1-1.csproj|solutionrelative:uppgift1-1\\wwwroot\\js\\function.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D34B9A-39F4-4EA3-85A0-A551F6B0CCFC}|Uppgift1-1\\Uppgift1-1.csproj|c:\\users\\erik\\source\\repos\\uppgift1-1\\uppgift1-1\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A3D34B9A-39F4-4EA3-85A0-A551F6B0CCFC}|Uppgift1-1\\Uppgift1-1.csproj|solutionrelative:uppgift1-1\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D34B9A-39F4-4EA3-85A0-A551F6B0CCFC}|Uppgift1-1\\Uppgift1-1.csproj|c:\\users\\erik\\source\\repos\\uppgift1-1\\uppgift1-1\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3D34B9A-39F4-4EA3-85A0-A551F6B0CCFC}|Uppgift1-1\\Uppgift1-1.csproj|solutionrelative:uppgift1-1\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D34B9A-39F4-4EA3-85A0-A551F6B0CCFC}|Uppgift1-1\\Uppgift1-1.csproj|c:\\users\\erik\\source\\repos\\uppgift1-1\\uppgift1-1\\pages\\razor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3D34B9A-39F4-4EA3-85A0-A551F6B0CCFC}|Uppgift1-1\\Uppgift1-1.csproj|solutionrelative:uppgift1-1\\pages\\razor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\Uppgift1-1\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "Uppgift1-1\\wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\Uppgift1-1\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "Uppgift1-1\\wwwroot\\css\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-17T15:20:29.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "function.js",
+              "DocumentMoniker": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\Uppgift1-1\\wwwroot\\js\\function.js",
+              "RelativeDocumentMoniker": "Uppgift1-1\\wwwroot\\js\\function.js",
+              "ToolTip": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\Uppgift1-1\\wwwroot\\js\\function.js",
+              "RelativeToolTip": "Uppgift1-1\\wwwroot\\js\\function.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-06T18:19:20.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\Uppgift1-1\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Uppgift1-1\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\Uppgift1-1\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Uppgift1-1\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-06T17:59:15.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\Uppgift1-1\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Uppgift1-1\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\Uppgift1-1\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Uppgift1-1\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwDEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T12:49:44.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Razor.cshtml",
+              "DocumentMoniker": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\Uppgift1-1\\Pages\\Razor.cshtml",
+              "RelativeDocumentMoniker": "Uppgift1-1\\Pages\\Razor.cshtml",
+              "ToolTip": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\Uppgift1-1\\Pages\\Razor.cshtml",
+              "RelativeToolTip": "Uppgift1-1\\Pages\\Razor.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T12:40:52.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\Uppgift1-1\\Pages\\About.cshtml",
+              "RelativeDocumentMoniker": "Uppgift1-1\\Pages\\About.cshtml",
+              "ToolTip": "C:\\Users\\Erik\\source\\repos\\Uppgift1-1\\Uppgift1-1\\Pages\\About.cshtml",
+              "RelativeToolTip": "Uppgift1-1\\Pages\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T12:40:37.357Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

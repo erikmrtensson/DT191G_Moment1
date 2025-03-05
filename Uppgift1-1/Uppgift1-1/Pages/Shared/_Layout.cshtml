@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Uppgift1_1</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Uppgift1_1.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="logo">Uppgift 1-1</h1>
+            <div class="date">
+                <p>Dagens datum är: @DateTime.Now.ToString("yyyy-MM-dd")</p>
+            </div>
+            </div>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"]?.ToString() == "Start" ? "active" : "")" asp-area="" asp-page="/Index">Start</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"]?.ToString() == "Razor" ? "active" : "")" asp-area="" asp-page="/Razor">Razor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"]?.ToString() == "About" ? "active" : "")" asp-area="" asp-page="/About">Om sidan</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="content">
+            @RenderBody()
+        </div>
+
+        <div class="footer">
+            <p>Av Erik Mårtensson - Kontakta mig via e-post: ermr1600@student.miun.se</p>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('open');
+        }
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

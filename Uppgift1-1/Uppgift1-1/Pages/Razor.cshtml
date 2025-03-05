@@ -1,0 +1,46 @@
+﻿@page
+@model Uppgift1_1.Pages.RazorModel
+@{
+    ViewData["Title"] = "Razor";
+
+    string[] courses = { "dt057g, Webbutveckling I", "dt191g, Webbutveckling med .NET", "dt193g, Fullstack-utveckling med ramverk", 
+    "dt084g, Introduktion till programmering i JavaScript", "dt003g, Databaser", "dt071g, Programmering i C#.NET" };
+
+    var date = DateTime.Now;
+
+    var currentDay = DateTime.Now.DayOfWeek;
+
+    string currentDayString = currentDay.ToString();
+
+}
+
+<h2>
+    Razor
+</h2>
+
+<h3>Information</h3>
+    
+<p><b>Datum/klockslag:</b> @date</p>
+
+
+    @if (currentDayString == "Friday")
+    {
+        <p>Idag är det fredag!</p>
+    } else {
+        <p>Idag är det inte fredag!</p>
+    }
+
+
+<h3>Kurser jag läst</h3>
+<ul>
+    @foreach (var course in courses)
+    {
+        <li>@course</li>
+    }
+</ul>
+
+<button id="changeColorButton">Ändra bakgrundsfärg</button>
+<p id="currentColor">Bakgrundsfärg: "White"</p>
+
+
+<script src="/js/function.js"></script>

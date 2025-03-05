@@ -1,0 +1,41 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime JS
+
+<div class="container">
+    <div class="header">
+        <h1 class="logo">Uppgift 1-2</h1>
+        <div class="date">
+            <p>Dagens datum är: @DateTime.Now.ToString("yyyy-MM-dd")</p>
+        </div>
+    </div>
+
+    <button class="menu-toggle" @onclick="ToggleMenu">☰</button>
+    <NavMenu />
+
+    <div class="content">
+        @Body
+    </div>
+
+    <div class="footer">
+        <p>Av Erik Mårtensson - Kontakta mig via e-post: ermr1600@student.miun.se</p>
+    </div>
+</div>
+
+<script>
+    // Javascript to toggle menu on smaller screens, opens/closes menu.
+    function toggleMenu() {
+        document.querySelector('.menu').classList.toggle('open');
+    }
+
+    function closeMenu() {
+        document.querySelector('.menu').classList.remove('open');
+    }
+</script>
+
+@code {
+    private void ToggleMenu()
+    {
+        // Calls JavaScript function to toggle menu
+        JS.InvokeVoidAsync("toggleMenu");
+    }
+}   

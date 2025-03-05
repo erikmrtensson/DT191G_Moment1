@@ -1,0 +1,64 @@
+@page "/JsonReader"
+@inject HttpClient Http
+
+<PageTitle>JSON</PageTitle>
+
+<h2>JSON</h2>
+<p>Data hämtas från <a href="https://randomuser.me/" target="_blank">https://randomuser.me/</a> varifrån 5 slumpmässigt genererade användare skapas och placeras i en tabell.</p>
+
+@if (users == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+        <table id="jsonTable">
+            <thead>
+                <tr>
+                    <th>Bild</th>
+                    <th>Namn</th>
+                    <th>Email</th>
+                    <th>Land</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in users)
+                {
+                    <tr>
+                        <td><img src="@user.Picture" alt="User Picture" width="50" height="50" class="userPicture"/></td>
+                        <td>@user.FullName</td>
+                        <td>@user.Email</td>
+                        <td>@user.Country</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+}
+
+@code {
+private List<User>? users;
+
+protected override async Task OnInitializedAsync()
+{
+    // Get data for 5 randomized people
+    var response = await Http.GetFromJsonAsync<JsonElement>("https://randomuser.me/api/?results=5");
+    
+    // Get the specific data to be put in list
+    users = response.GetProperty("results").EnumerateArray().Select(user => new User
+    {
+        // To get the title + surname, first get the name property. Combine to a string.
+        FullName = $"{user.GetProperty("name").GetProperty("title").GetString()} {user.GetProperty("name").GetProperty("last").GetString()}",
+        Email = user.GetProperty("email").GetString(),
+        Country = user.GetProperty("location").GetProperty("country").GetString(),
+        Picture = user.GetProperty("picture").GetProperty("thumbnail").GetString()
+    }).ToList();
+}
+
+    public class User
+    {
+        public string? FullName { get; set; }
+        public string? Email { get; set; }
+        public string? Country { get; set; }
+        public string? Picture { get; set; }
+    }
+}

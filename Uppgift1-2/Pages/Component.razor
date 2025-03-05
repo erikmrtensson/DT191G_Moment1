@@ -1,0 +1,43 @@
+﻿@page "/Component"
+
+<PageTitle>Component</PageTitle>
+
+<h2>Extra komponent</h2>
+<p>På den här sidan finns en enkel komponent för att skapa en lista, det även går att ta bort inmatade punkter.</p>
+
+<h3>Lista</h3>
+
+<div class="extraComponent">
+
+    <input @bind="newItem" placeholder="Att lägga till i listan" />
+    <button @onclick="AddItem">Lägg till</button>
+
+    <ul>
+        @foreach (var item in items)
+        {
+            <li>
+                @item
+                <button class="removeBtn" @onclick="() => RemoveItem(item)">Ta bort</button>
+            </li>
+        }
+    </ul>
+
+</div>
+@code {
+    private List<string> items = new();
+    private string newItem = string.Empty;
+
+    private void AddItem()
+    {
+        if (!string.IsNullOrWhiteSpace(newItem))
+        {
+            items.Add(newItem);
+            newItem = string.Empty;
+        }
+    }
+
+    private void RemoveItem(string item)
+    {
+        items.Remove(item);
+    }
+}
